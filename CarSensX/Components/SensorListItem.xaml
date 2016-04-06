@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="CarSensX.Components.SensorListItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="80" d:DesignWidth="800">
+    <Grid Height="80" Width="800" Margin="0,10,0,0">
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+        </Grid.Background>
+
+        <Image HorizontalAlignment="Left" Margin="10,10,0,10" Width="60" OpacityMask="Red"/>
+        <Label Name="LblName" Content="Label" HorizontalAlignment="Left" Margin="75,10,0,0" VerticalAlignment="Top" Width="715" FontWeight="Bold" FontFamily="Verdana" FontSize="16"/>
+        <Label Name="LblIdentifier" Content="Label" HorizontalAlignment="Left" Margin="75,44,0,0" VerticalAlignment="Top" Width="715"/>
+
+    </Grid>
+</UserControl>

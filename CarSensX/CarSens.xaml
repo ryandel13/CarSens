@@ -1,0 +1,24 @@
+﻿<Window x:Class="CarSensX.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:components="clr-namespace:CarSensX.Components"
+        xmlns:views="clr-namespace:CarSensX.Views"
+        Title="CarSensX 1.0" Height="600" Width="1024" ResizeMode="NoResize">
+    <Grid Name="BackgroundGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/black-background_00313351.jpg"/>
+        </Grid.Background>
+        <DockPanel LastChildFill="False" Margin="10">
+            <Grid Name="MainView" Height="580" VerticalAlignment="Top" Width="820">
+                <views:SensorView></views:SensorView>
+            </Grid>
+            <StackPanel Height="580" VerticalAlignment="Top" Width="180">
+                <components:ControlButton x:Name="BtnEdit" HorizontalAlignment="Left" Width="180" Height="100" Margin="0,10,0,0"/>
+                <components:ControlButton x:Name="BtnFullScreen" HorizontalAlignment="Left" Width="180" Height="100" Margin="0,20,0,0"/>
+                <components:ControlButton x:Name="BtnBackground" HorizontalAlignment="Left" Width="180" Height="100" Margin="0,20,0,0"/>
+                <components:ControlButton x:Name="BtnExit" HorizontalAlignment="Left" Width="180" Height="100" Margin="0,20,0,0"/>
+            </StackPanel>
+        </DockPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="CarSensX.Components.ControlButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="180">
+
+    <Grid Name="mainGrid" Height="100" Width="180">
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+        </Grid.Background>
+        <Image Name="Icon" Height="70" Width="70" Source="/CarSensX;component/Resources/iconEdit.png" />
+        <Label Name="LblName" Content="Label" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Width="160" FontFamily="Verdana" FontWeight="Bold" HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</UserControl>
